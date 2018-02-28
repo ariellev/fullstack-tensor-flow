@@ -1,0 +1,5 @@
+{
+    "epsilon": 1e-07,
+    "floatx": "float64",
+    "backend": "tensorflow"
+}

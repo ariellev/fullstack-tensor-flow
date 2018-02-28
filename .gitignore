@@ -1,0 +1,13 @@
+**/.Trash-0*
+**/*.local
+**/.ipynb_checkpoints
+**/.ropeproject
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+**/data/
+**/*.log
+**/viz
+**/cars

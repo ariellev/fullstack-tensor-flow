@@ -1,0 +1,13 @@
+numpy==1.13.3
+json-rpc==1.10.8
+grpcio==1.8.4
+protobuf==3.5.0.post1
+Pillow==4.3.0
+Flask==0.12.2
+flask-restplus==0.10.1
+scipy==1.0.0
+tensorflow==1.4.1
+tensorflow-serving-api==1.4.0
+flask-cors==3.0.3
+Werkzeug==0.13
+pandas==0.20.3

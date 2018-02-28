@@ -1,0 +1,14 @@
+Keras
+scipy
+numpy
+Pillow
+scipy
+tensorflow
+pandas
+Keras
+folium
+bokeh==0.12.6
+geopy
+colour
+jupyterlab
+pygal

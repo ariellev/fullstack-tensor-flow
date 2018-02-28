@@ -1,0 +1,53 @@
+version: '3'
+services:
+  tensor-board:
+    image: ${registry}/lab/tensor-board:$tag
+    env_file:
+        - $env_file
+    container_name: tensor-board
+    ports:
+      - 6006:6006
+    volumes:
+       - tensor-logs:/logs
+
+  tensor-jupyter:
+    image: ${registry}/lab/tensor-jupyter:$tag
+    env_file:
+        - $env_file
+    container_name: tensor-jupyter
+    ports:
+      - 8888:8888
+    volumes:
+       - tensor-logs:/home/ml/logs
+       - tensor-models:/home/ml/models
+       - ../tensor-jupyter/notebook:/home/ml/notebook
+    depends_on:
+      - tensor-board
+      - tensor-serving-cpu
+
+  tensor-serving-cpu:
+    image: ${registry}/lab/tensor-serving-cpu:$tag
+    env_file:
+        - $env_file
+    container_name: tensor-serving-cpu
+    ports:
+      - 9000:9000
+    volumes:
+       - tensor-models:/serving
+
+  tensor-rest:
+    image: ${registry}/lab/tensor-rest:$tag
+    env_file:
+        - $env_file
+    container_name: tensor-rest
+    environment:
+      - TF_SERVER_HOST_PORT=tensor-serving-cpu:9000
+    ports:
+      - 8080:80
+    depends_on:
+      - tensor-serving-cpu
+
+
+volumes:
+  tensor-logs:
+  tensor-models:

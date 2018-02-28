@@ -43,6 +43,7 @@ done
 > docker ps
 
 CONTAINER ID        IMAGE                                          COMMAND                   CREATED              STATUS              PORTS                              NAMES
+4df4c922c714        localhost:5000/lab/tensor-board:latest         "/bin/sh -c 'tensorb…"    3 seconds ago       Up 4 seconds        0.0.0.0:6006->6006/tcp             tensor-board
 b4e4962c1ff5        localhost:5000/lab/tensor-jupyter:latest       "/bin/sh -c '/run_ju…"    About a minute ago   Up About a minute   6006/tcp, 0.0.0.0:8888->8888/tcp   tensor-jupyter
 22a74f45e1f0        localhost:5000/lab/tensor-rest:latest          "/entrypoint.sh /usr…"    About a minute ago   Up About a minute   443/tcp, 0.0.0.0:8080->80/tcp      tensor-rest
 69d883c74986        localhost:5000/lab/tensor-serving-cpu:latest   "/bin/sh -c \"entrypo…"   About a minute ago   Up About a minute   0.0.0.0:9000->9000/tcp             tensor-serving-cpu
@@ -65,7 +66,7 @@ b4e4962c1ff5        localhost:5000/lab/tensor-jupyter:latest       "/bin/sh -c '
 # Create a Tensor-Flow conda environment
 # Unfortunately tensor-serving-api is only available for python 2.7
 
-> conda env create -y -f=docker/tensor-rest/requirements.txt -n tf2.7
+> conda env create -y -f=tensor-rest/requirements.txt -n tf2.7
 
 # activate the environment
 > source activate tf2.7
@@ -93,7 +94,7 @@ b4e4962c1ff5        localhost:5000/lab/tensor-jupyter:latest       "/bin/sh -c '
 > pip install uwsgi
 
 # Run tensor-rest directly on localhost, without docker
-> cd docker/tensor-rest/app
+> cd tensor-rest/app
 > uwsgi uwsgi.ini
 
 # open web browser

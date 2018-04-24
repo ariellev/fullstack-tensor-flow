@@ -17,10 +17,8 @@ To work with a local private registry make sure that:
 
 ```
 # start docker-compose
-> compose.sh up -f docker/.deploy/localhost-compose.yml
+> compose.sh up -f .deploy/localhost-compose.yml
 
-..
-compose.sh up -f docker/.deploy/localhost-compose.yml
 -------------------------------------------------------
 docker-compose           up
 -------------------------------------------------------
@@ -54,9 +52,32 @@ b4e4962c1ff5        localhost:5000/lab/tensor-jupyter:latest       "/bin/sh -c '
 ```
 ###### Resources
 1. [Jupyter notebook](http://localhost:8888/)
-2. [Tensor-Board](http://localhost:6006/)
-3. [RESTful API](http://localhost:8080/tf/)
+![alt Juypter](https://raw.githubusercontent.com/ariellev/tensor/master/images/jupyter.png)
 
+2. [Tensor-Board](http://localhost:6006/)
+![alt Juypter](https://raw.githubusercontent.com/ariellev/tensor/master/images/tensor-board.png)
+
+3. [RESTful API](http://localhost:8080/tf/)
+![alt Juypter](https://raw.githubusercontent.com/ariellev/tensor/master/images/rest.png)
+
+```
+{
+  "classification_result": [
+    {
+      "digit": 2,
+      "probability": 1
+    },
+    {
+      "digit": 0,
+      "probability": 0
+    },
+    {
+      "digit": 1,
+      "probability": 0
+    }
+  ]
+}
+```
 
 ## Development
 * Install [conda](https://conda.io/docs/user-guide/install/index.html) and a bunch of handy utilities: [csvkit](https://csvkit.readthedocs.io/en/1.0.2/)

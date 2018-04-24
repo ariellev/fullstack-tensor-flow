@@ -7,7 +7,7 @@ __pycache__
 *.pyo
 *.pyd
 .Python
-**/data/
+**/data/cars
 **/*.log
 **/viz
 **/cars

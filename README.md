@@ -53,13 +53,16 @@ b4e4962c1ff5        localhost:5000/lab/tensor-jupyter:latest       "/bin/sh -c '
 ###### Resources
 1. [Jupyter notebook](http://localhost:8888/)
 ![alt Juypter](https://raw.githubusercontent.com/ariellev/tensor/master/images/jupyter.png)
+Navigate to ```MnistNet.ipynb``` and run the script to train the Mnist-NN.
 
 2. [Tensor-Board](http://localhost:6006/)
 ![alt Juypter](https://raw.githubusercontent.com/ariellev/tensor/master/images/tensor-board.png)
 
 3. [RESTful API](http://localhost:8080/tf/)
 ![alt Juypter](https://raw.githubusercontent.com/ariellev/tensor/master/images/rest.png)
-
+* Enter ```mnist-net``` in the `model` value field
+* Upload a digit image, e.g. from [tensor-rest/data/mnist](https://github.com/ariellev/tensor/tree/master/tensor-rest/data/mnist)
+* Click ```Try it out!```. You should receive something like the following response:
 ```
 {
   "classification_result": [

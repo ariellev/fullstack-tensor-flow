@@ -5,7 +5,7 @@ import os
 import env
 import logging.config
 from .api.mnist.endpoints import ns as mnist_ns
-from .api.cars.endpoints import ns as cars_ns
+
 # from api.api import api
 from werkzeug.contrib.fixers import ProxyFix
 
@@ -24,7 +24,6 @@ api = Api(version='1.0',
 blueprint = Blueprint('tf', __name__, url_prefix='/tf')
 api.init_app(blueprint)
 api.add_namespace(mnist_ns)
-api.add_namespace(cars_ns)
 app.register_blueprint(blueprint)
 
 # to enable CORS see https://pypi.python.org/pypi/Flask-Cors

@@ -3,7 +3,7 @@ json-rpc==1.10.8
 grpcio==1.8.4
 protobuf==3.5.0.post1
 Pillow==4.3.0
-Flask==0.12.2
+Flask==0.12.3
 flask-restplus==0.10.1
 scipy==1.0.0
 tensorflow==1.4.1

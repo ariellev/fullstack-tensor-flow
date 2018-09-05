@@ -50,7 +50,7 @@ done
 
 # default values
 if [ -z ${docker_ip} ]; then
-    docker_ip=$(ifconfig | grep 'inet 192' | cut -d " " -f2)
+    docker_ip=$(ifconfig | grep en0 -A3 | grep 'inet' | cut -d " " -f2)
 fi
 
 if [ -z ${project_name} ]; then

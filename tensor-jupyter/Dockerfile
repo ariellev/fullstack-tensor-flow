@@ -1,6 +1,6 @@
 FROM tensorflow/tensorflow:latest-py3
 
-MAINTAINER Ariel Lev 
+MAINTAINER Ariel Lev
 
 # ML User
 ENV ML_USER ml
@@ -57,5 +57,5 @@ RUN jupyter labextension install jupyterlab_bokeh
 RUN mkdir $HOME/.keras/
 COPY keras.json $HOME/.keras/
 
-
+RUN apt-get install -y tree
 CMD jupyter lab --ip=* --port=8888 --no-browser --notebook-dir=$NOTEBOOK_PATH --NotebookApp.token='' --allow-root

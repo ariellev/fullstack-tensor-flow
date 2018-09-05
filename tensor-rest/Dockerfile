@@ -47,7 +47,6 @@ RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 # Copy the modified Nginx conf
 COPY nginx.conf /etc/nginx/sites-available/default
 
-# COPY server.conf /etc/nginx/sites-enabled/default
 # Copy the base uWSGI ini file to enable default dynamic uwsgi process number
 COPY uwsgi.ini /etc/uwsgi/
 

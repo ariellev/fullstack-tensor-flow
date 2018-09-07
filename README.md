@@ -296,7 +296,7 @@ And regarding the future.. well..
 ![alt Cloud](https://raw.githubusercontent.com/ariellev/fullstack-tensor-flow/master/images/blah-blah-cloud.png)
 
 ___
-<a name="private-registry">1. Depending on you docker engine this step may be obsolete.</a>   
+<a name="private-registry">1. Depending on the version of your docker engine this step may be obsolete.</a>   
 <a name="jupyterlab" href="https://github.com/jupyterlab/jupyterlab">2. Jupyter Lab</a>  
 <a name="docker-compose" href="https://docs.docker.com/compose/">3. Docker Compose</a>  
 <a name="container-adoption-survey" href="https://portworx.com/2017-container-adoption-survey/">4. 2017 Container Adoption Survey</a>

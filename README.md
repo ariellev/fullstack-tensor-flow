@@ -12,7 +12,7 @@ Fullstack TensorFlow
 6. [Beyond localhost](#beyond-localhost)
 
 ## Introduction
-Among the excellent tutorials, blogs and many other online resources out there in the web, cleverly demonstrating how to train a neural network with less than 2 lines of code, it seems to be only a few, which can guide one through sometimes a quite challenging trial, of turning a sour neural liquid into an enjoyable, delightful, winy, production-ready service - a task which might become even more trickier, especially when deploying an application to a complex productive environment.
+Among the many excellent tutorials, blogs and many other online resources out there in the web, cleverly demonstrating how to train a neural network with less than 2 lines of code, it seems to be only a few, which can guide one through sometimes a quite challenging trial, of turning a sour neural liquid into an enjoyable, delightful, winy, production-ready service - a task which might become even more trickier, especially when deploying an application to a complex productive environment.
 
 This blog post is there to help you navigating your way in this *DevOps* jungle. It won't take you all the way to the promised land, yet it would show you a path to follow, one that you can later extend, improve and finalize to fit your specific requirements. The content of this blog was not just born out of nowhere, instead it adds to the terrific work of [*Vitaly Bezgachev*](https://becominghuman.ai/creating-restful-api-to-tensorflow-models-c5c57b692c10) and other contributors from the community.
 

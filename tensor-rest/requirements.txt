@@ -6,7 +6,7 @@ Pillow==4.3.0
 Flask==0.12.3
 flask-restplus==0.10.1
 scipy==1.0.0
-tensorflow==1.4.1
+tensorflow==2.5.1
 tensorflow-serving-api==1.4.0
 flask-cors==3.0.3
 Werkzeug==0.13

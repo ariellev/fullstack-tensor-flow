@@ -1,4 +1,4 @@
-numpy==1.13.3
+numpy==1.22.0
 json-rpc==1.10.8
 grpcio==1.8.4
 protobuf==3.5.0.post1
